@@ -26,6 +26,14 @@ button {
   cursor: pointer;
 }
 
+label {
+  font-size: 18px;
+}
+
+select {
+  font-size: 18px;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;

@@ -21,6 +21,8 @@ const grid = document.querySelector('.grid');
 const scoreDisplay = document.querySelector('span');
 const startBtn = document.querySelector('.start-btn');
 const keyBtns = document.querySelectorAll('.keys-container button');
+const speedSelector = document.getElementById('speed-selector');
+
 
 // game variables
 const width = 10;
@@ -65,6 +67,8 @@ function startGame() {
     cells[i].innerText = '';
   });
   clearInterval(interval);
+  const selectedSpeed = speedSelector.value;
+  intervalTime = parseInt(selectedSpeed);
   direction = 1;
   currentSnake = [2, 1, 0];
   currentSnake.forEach(i => {
